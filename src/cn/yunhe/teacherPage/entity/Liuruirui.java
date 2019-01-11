@@ -3,6 +3,7 @@ package cn.yunhe.teacherPage.entity;
 import java.util.Date;
 
 public class Liuruirui {
+	private String addr;
 	private int id;
 	private String name;
 	private int age;
@@ -12,22 +13,45 @@ public class Liuruirui {
 	private Date birth;
 
 	
+
 	
-	public Liuruirui(int id, String name, int age, String sex, Date birth) {
+	
+
+	public Liuruirui(String addr, int id, String name, int age, String sex, Date birth) {
 		super();
+		this.addr = addr;
 		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.sex = sex;
 		this.birth = birth;
 	}
-	
-	
-	
+
+
+
+
+	public String getAddr() {
+		return addr;
+	}
+
+
+
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+
+
+
+
+
+
+
 
 	@Override
 	public String toString() {
-		return "Liuruirui [id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex + ", birth=" + birth + "]";
+		return "Liuruirui [addr=" + addr + ", id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex
+				+ ", birth=" + birth + "]";
 	}
 
 
